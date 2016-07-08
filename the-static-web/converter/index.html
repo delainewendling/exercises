@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<header> <h1> Temperature Converter </h1></header>
+<section> 
+
+<form action=""> 
+<label class="hidden" for="temperature"> Enter Temperature: </label>
+<input type="number" name="temperature" id="temperature" placeholder="Enter temperature">
+
+<label for="fahrenheit"> Convert to Fahrenheit</label>
+<input type="radio" name="tempScale" id="fahrenheit">
+
+<label for="celsius"> Convert to Celsius </label>
+<input type="radio" name="tempScale" id="celsius" required>
+<button type="submit" id="converter"> Convert </button>
+</form>
+
+<div id="convertedTemp"></div>
+
+</section>
+<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+<script type="text/javascript" src='converter.js'></script>
+</body>
+</html>
