@@ -1,0 +1,57 @@
+header {
+  border: blue solid 1px;
+}
+
+.nav_bar li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10%;
+}
+
+.nav_bar a {
+  text-decoration: none;
+}
+
+span.disabled {
+  color: #ccc;
+}
+
+a.disabled {
+  color: purple;
+}
+
+.active {
+  color: yellow;
+}
+
+.parent div:nth-child(1) {
+  color:red;
+}
+
+.parent div:nth-child(3) {
+  color:blue;
+}
+
+.parent div:nth-child(1) + h4 {
+  background-color:red
+}
+
+.parent div:nth-child(3) + h4 {
+  background-color:blue;
+}
+
+.grandparent > h4 {
+  border-radius: 10px;
+  border: 1px solid blue;
+}
+
+.promo {
+  font-weight: bold;
+  color: gold;
+}
+
+input[type="text"] {
+  height: 25px;
+  background-color: green;
+}
+
