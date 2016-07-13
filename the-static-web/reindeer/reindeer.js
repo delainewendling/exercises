@@ -4,6 +4,14 @@ var reindeer = ["Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donne
 
 var hohohoElement = document.getElementById("coloredReindeer");
 
-for(i=0; i<reindeer.length; i++) {
-  $('#reindeer').append(colors[i] + " " + reindeer[i]+ "<br>");
+var cLength = colors.length;
+var rLength = reindeer.length;
+
+for(i=0; i<cLength; i++) {
+  if (i >= rLength) {
+    var remainder = i % rLength;
+    hohohoElement.innerHTML += "<p>"+ colors[i] + " " + reindeer[remainder]+ "</p>";
+  } else {
+    hohohoElement.innerHTML += "<p>"+ colors[i] + " " + reindeer[i]+ "</p>";
+ }
 }
