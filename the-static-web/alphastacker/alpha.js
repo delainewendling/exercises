@@ -28,10 +28,28 @@ var alpha = [
 ]
 
 function stackLetters() {
-  for (i=0; i<alpha.length; i++) {
-  var output = "<p>"+alpha.slice(0, i+1).join("")+"</p>";
-  console.log(output);
- }
+  var string = "";
+  for(i=0; i<alpha.length; i++) {
+    string += alpha[i];
+    if((i+1)%5===0) {
+      string += " ";
+    }
+    console.log(string);
+  }
 }
 
 stackLetters();
+
+//Old attempt
+
+// function stackLetters() {
+//   for (i=0; i<alpha.length; i++) {
+//     if (i%5 === 0) {
+//       console.log("<p>"+alpha.slice(0, i).join("")+ " " + alpha.slice(i, i+1) +"</p>");
+//     } else {
+//       console.log("<p>"+alpha.slice(0, i+1).join("")+"</p>");
+//     }
+//  }
+// }
+
+// stackLetters();
