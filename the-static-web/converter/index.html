@@ -2,13 +2,14 @@
 <html>
 <head>
   <title></title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 <header> <h1> Temperature Converter </h1></header>
-<section> 
+<section>
 
-<form action=""> 
+<form action="">
 <label class="hidden" for="temperature"> Enter Temperature: </label>
 <input type="number" name="temperature" id="temperature" placeholder="Enter temperature">
 
@@ -18,9 +19,12 @@
 <label for="celsius"> Convert to Celsius </label>
 <input type="radio" name="tempScale" id="celsius" required>
 <button type="submit" id="converter"> Convert </button>
+<button type="reset" id="clear"> Clear </button>
 </form>
 
-<div id="convertedTemp"></div>
+<div id="convertedTemp" class="temp">
+
+</div>
 
 </section>
 <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
