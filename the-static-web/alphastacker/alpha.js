@@ -27,18 +27,36 @@ var alpha = [
 "z"
 ]
 
+var show = document.getElementById("alphabet");
+
 function stackLetters() {
-  var string = "";
-  for(i=0; i<alpha.length; i++) {
-    string += alpha[i];
+  for(var i=0, string = " "; i<alpha.length; i++) {
     if((i+1)%5===0) {
-      string += " ";
+      string += alpha[i] + " ";
     }
-    console.log(string);
+    else {
+      string += alpha[i];
+    }
+    show.innerHTML +=  string + "<br>";
   }
 }
 
 stackLetters();
+
+//To the console
+
+// function stackLetters() {
+//   var string = "";
+//   for(i=0; i<alpha.length; i++) {
+//     string += alpha[i];
+//     if((i+1)%5===0) {
+//       string += " ";
+//     }
+//     console.log(string);
+//   }
+// }
+
+// stackLetters();
 
 //Old attempt
 
