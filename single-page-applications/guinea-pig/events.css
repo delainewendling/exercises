@@ -1,0 +1,56 @@
+.section {
+  background-color: #219898;
+  height: 30px;
+  font-size: 1.25em;
+  color: white;
+}
+
+.onHeader{
+  background-color: #AFEC34;
+  height: 30px;
+  font-size: 1.25em;
+  color: black;
+}
+
+.offHeader {
+  background-color: #FD3838;
+  height: 30px;
+  font-size: 1.25em;
+  color: white;
+}
+
+#guinea-pig {
+  display: inline-block;
+  margin: 10px;
+}
+.colorBlue {
+  color: blue;
+}
+
+.makeLarge {
+  font-size: 3em;
+}
+
+.addBorder {
+  border: 2px dashed black;
+  padding: 10px;
+}
+
+.addRound {
+  border: 2px dashed black;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+button {
+  display: block;
+}
+
+.article-section:first-child {
+  font-weight: bold;
+}
+
+.article-section:last-child {
+  font-weight: bold;
+  font-style: italic;
+}
