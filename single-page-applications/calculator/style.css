@@ -1,0 +1,23 @@
+
+/*.input {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.left {
+  display: block;
+  float: left;
+  margin-left: 42%;
+}
+
+.right {
+  display: block;
+  float: right;
+  margin-right: 42%;
+}
+
+.output {
+  text-align: center;
+}*/
