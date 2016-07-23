@@ -17,6 +17,12 @@
   cursor: pointer;
 }
 
+.slash {
+  text-decoration: line-through;
+  color: #aaa;
+  font-style: italic;
+}
+
 #instructions {
   box-shadow: 1px 1px 1px #aaa;
   border-radius: 4px;
@@ -31,3 +37,10 @@
 .addedItem {
   margin-top: 10px;
 }
+
+textarea {
+  font-size: .9em;
+  resize: none;
+  height: 1em;
+}
+
