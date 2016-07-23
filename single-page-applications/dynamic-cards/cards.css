@@ -1,0 +1,33 @@
+.textarea {
+  resize: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.todo h2 {
+  margin-bottom: 25px;
+}
+
+#addIcon {
+  margin-left: 10px;
+  height: 1.5em;
+  width: auto;
+  cursor: pointer;
+}
+
+#instructions {
+  box-shadow: 1px 1px 1px #aaa;
+  border-radius: 4px;
+  padding: 3px;
+  background-color: rgba(43, 86, 112, 0.7);
+  color: white;
+  position: absolute;
+  top: 18%;
+  left: 5%;
+}
+
+.addedItem {
+  margin-top: 10px;
+}
