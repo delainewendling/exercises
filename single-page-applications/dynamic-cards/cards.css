@@ -42,5 +42,10 @@ textarea {
   font-size: .9em;
   resize: none;
   height: 1em;
+  box-shadow: 1px 1px 1px #aaa;
+  border: 1px solid #aaa;
 }
 
+.delete {
+  cursor: pointer;
+}
