@@ -9,6 +9,7 @@ var Predator = (function () {
       loader.addEventListener("load", function () {
         // Set the value of the private array
         herbivores = JSON.parse(this.responseText);
+        callback(herbivores)
       });
     },
     loadCarnivores: function (callbackToInvoke) {

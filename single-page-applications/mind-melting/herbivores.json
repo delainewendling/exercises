@@ -1,0 +1,20 @@
+{
+  "herbivores": [
+    {
+      "name": "American Bison",
+      "family": "Bovine"
+    },
+    {
+      "name": "Caribou",
+      "family": "Deer"
+    },
+    {
+      "name": "Kangaroo",
+      "family": "Diprotodontia"
+    },
+    {
+      "name": "Rabbit",
+      "family": "Lagomorpha"
+    }
+  ]
+}

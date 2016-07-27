@@ -1,0 +1,20 @@
+{
+  "carnivores": [
+    {
+      "name": "Wildcat",
+      "family": "Felidae"
+    },
+    {
+      "name": "Chinese Mountain Cat",
+      "family": "Felidae"
+    },
+    {
+      "name": "Wildcat",
+      "family": "Felidae"
+    },
+    {
+      "name": "Chinese Mountain Cat",
+      "family": "Felidae"
+    }
+  ]
+}
