@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<header>
+  <h1> Build a Tree </h1>
+</header>
+<section class="description">
+  <p> Use the form below to create your very own tree! Determine the height of the tree and the character that you would like the tree to be made from. </p>
+</section>
+<section>
+<form action="">
+  <label for="height"> Height of Tree <small>(number of rows)</small>: </label>
+  <input type="text" name="height" id="height"> <br>
+  <label for="character">Character for Tree:</label>
+  <input type="text" name="character" id="character">
+  <button type="submit" id="grow">Grow your tree</button>
+</form>
+</section>
+<footer></footer>
+<script type="text/javascript" src="tree.js"></script>
+</body>
+</html>
+
+
+// var emptyHeight = document.getElementById("height").value;
+// var emptyChar = document.getElementById("character");
+
+// function enter () {
+//   if(!emptyHeight.match(/\S/) && !emptyChar.match(/\S/)) {
+//     document.getElementById("grow").addEventListener("click", growTree);
+//   } else {
+//     alert("Both the height and character fields must have a value")
+//   }
+// }
+
+var heightVal = Number(document.getElementById("height").value);
+var charVal = document.getElementById("character").value;
+var treeObj = { };
+
+function growTree() {
+  treeObj.height = heightVal;
+  treeObj.character = charVal;
+  for(i=0; i<=heightVal; i++) {
+    var oneLess = i-1;
+    var space = " ";
+    console.log(space.repeat(heightVal-oneLess)+charVal.repeat(2*i+1));
+  }
+}
+
+document.getElementById("grow").addEventListener("click", function(event) {
+  event.preventDefault();
+  growTree();
+});
