@@ -1,0 +1,16 @@
+.image {
+  max-width: 100%;
+  height: 200px;
+}
+
+.textInput {
+  margin-top: 15px;
+}
+
+.people:nth-child(even) {
+  background-color: #FFD171;
+}
+
+.people:nth-child(odd) {
+  background-color: lightblue;
+}
