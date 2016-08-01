@@ -1,17 +1,22 @@
 $(function(){
-  var index = 0
   var numberOfImages = $('.imgContainer').length
-  // $('.imgContainer').eq(index).removeClass("hidden");
-  // $('#arrowLeft').click((e)=>{
-  //   console.log("index from left", index)
-  //   var remainder = index%numberOfImages;
-  //   console.log("remainder from left", remainder)
-  //   $('.imgContainer').eq(index).addClass('hidden')
-  //   $('.imgContainer').eq(remainder).prev('.imgContainer').removeClass('hidden')
-  //   console.log("left clicked")
-  //   index--
-  //   console.log("index from left", index)
-  // })
+  var index = 0;
+  $('#arrowLeft').click((e)=>{
+    if(index <= 0){
+      index=6;
+      console.log("left index w/ reset")
+    }
+    var remainder = index%numberOfImages;
+    if (remainder === 0){
+      $('.imgContainer').eq(remainder).addClass('hidden')
+      $('.imgContainer').eq(5).removeClass('hidden')
+      index--
+   } else {
+      $('.imgContainer').eq(remainder).addClass('hidden')
+      $('.imgContainer').eq(remainder).prev(".imgContainer").removeClass('hidden')
+      index--
+   }
+  })
    $('#arrowRight').click((e)=>{
     var remainder = index%numberOfImages;
     if (remainder === 5){
