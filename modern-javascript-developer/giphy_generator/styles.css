@@ -1,0 +1,16 @@
+body {
+  background-color: white;
+}
+.giphy {
+  height: 300px;
+  width: 300px;
+}
+
+.giphyIcon {
+  max-height: 30px;
+  cursor: pointer;
+}
+
+.arrow {
+  background-color: white;
+}
