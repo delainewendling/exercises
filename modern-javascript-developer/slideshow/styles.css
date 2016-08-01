@@ -1,16 +1,32 @@
 h1 {
   text-align: center;
 }
-img {
+.imgContainer {
+  height: 500px;
+  width: 500px;
+}
+.animal{
+  display: inline-block;
   max-height: 500px;
-  max-width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
 }
 
 .arrow {
   max-height: 50px;
-  margin-top: 90%;
+  margin-top: 200%;
 }
 
 .hidden {
   display: none;
+}
+
+.caption {
+  text-align: center;
+  background-color: #94469F;
+  color: white;
+  border-radius: 4px;
+  width: 80%;
+  margin: 0 10%;
+  padding: 10px;
 }
