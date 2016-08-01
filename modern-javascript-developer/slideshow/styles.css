@@ -6,7 +6,7 @@ h1 {
   width: 500px;
 }
 .animal{
-  display: inline-block;
+  display: block;
   max-height: 500px;
   max-width: 500px;
   margin: 40px auto;
@@ -29,4 +29,8 @@ h1 {
   width: 80%;
   margin: 0 10%;
   padding: 10px;
+}
+
+.footer{
+  margin-left: 15%;
 }
