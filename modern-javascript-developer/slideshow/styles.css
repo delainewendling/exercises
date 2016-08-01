@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+}
+img {
+  max-height: 500px;
+  max-width: 100%;
+}
+
+.arrow {
+  max-height: 50px;
+  margin-top: 90%;
+}
+
+.hidden {
+  display: none;
+}
