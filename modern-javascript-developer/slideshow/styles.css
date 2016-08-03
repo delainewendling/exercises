@@ -1,10 +1,16 @@
 h1 {
   text-align: center;
 }
-.imgContainer {
+img {
+  display: none;
+}
+.active {
+  display: inline-block;
+}
+/*.imgContainer {
   height: 500px;
   width: 500px;
-}
+}*/
 .animal{
   display: block;
   max-height: 500px;
@@ -13,13 +19,14 @@ h1 {
 }
 
 .arrow {
+  display: inline-block;
   max-height: 50px;
   margin-top: 200%;
 }
 
-.hidden {
+/*.hidden {
   display: none;
-}
+}*/
 
 .caption {
   text-align: center;

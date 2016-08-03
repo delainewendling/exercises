@@ -4,8 +4,9 @@ $(document).ready(function(){
     console.log("loaded")
     var images = res.data;
     images.forEach(function(img){
-      $('.imgContainer').append(`<img src="${img.images.original.url}" class="giphy hidden">`);
+      $('.imgContainer').append(`<img src="${img.images.original.url}" class="giphy">`);
+      console.log("images")
     })
-    $('.giphy').first().removeClass("hidden")
+    $("img").first().addClass("active")
   })
 })

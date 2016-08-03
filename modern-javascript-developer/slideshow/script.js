@@ -39,7 +39,6 @@ $(function(){
     }
   })
 
-
   //   //If left arrow is clicked
   // $('#arrowLeft').click((e)=>{
   //   if(index <= 0){

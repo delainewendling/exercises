@@ -4,6 +4,8 @@ body {
 .giphy {
   height: 300px;
   width: 300px;
+  display: block;
+  margin: 10px auto;
 }
 
 .giphyIcon {
@@ -13,4 +15,11 @@ body {
 
 .arrow {
   background-color: white;
+  height: 40px;
+  margin: 200% auto;
+  display: block;
+}
+
+.hidden {
+  display: none;
 }

@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "image": "images/kitty1.jpg"
+    },
+    {
+      "image": "images/puppy1.jpeg"
+    },
+    {
+      "image": "images/kitty2.jpg"
+    },
+    {
+      "image": "images/puppy2.jpg"
+    },
+    {
+      "image": "images/kitties3.jpeg"
+    },
+    {
+      "image": "images/puppy3.jpg"
+    }
+  ]
+}
