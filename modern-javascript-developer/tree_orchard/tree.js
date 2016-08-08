@@ -22,31 +22,27 @@ Plant.prototype.decreaseHeight = function (reduction) {
 // Tree.prototype.branches = 0
 
 Tree.prototype.grow = function (amount) {
-
+  this.branches += amount;
 }
 
 Tree.prototype.trim = function (amount) {
   this.branches -= amount;
-  console.log("branches")
 }
 
 var PearTree = new Tree()
 var OakTree = new Tree()
 
+//Set up timers that call functions
 var growthInterval = setInterval(growTrees, 1000)
+var trimInterval = setInterval(trimTrees, 10000)
+var stopInterval = setTimeout(stopGrowth, 30000)
 
-// var trimInterval = setInterval(trimTrees(1), 10000)
-
-function trimTrees(amount){
-  PearTree.trim.call(PearTree, amount)
-  OakTree.trim.call(OakTree, amount)
-  console.log("pear tree branches", PearTree.branches)
-  console.log("oak tree branches", OakTree.branches)
-}
-
+//Group of functions that grow the tree height
 function growTrees (){
   IncreasePearHeight()
   IncreaseOakHeight()
+  IncreasePearBranches()
+  IncreaseOakBranches()
 }
 
 function IncreasePearHeight (){
@@ -58,14 +54,35 @@ function IncreasePearHeight (){
 function IncreaseOakHeight (){
   var OakTreeIncrease = Math.round(Math.random()*5+5)
   OakTree.increaseHeight.call(OakTree, OakTreeIncrease)
-  printToDOM()
   console.log("oak tree height", OakTree.height)
-  console.log("---------------")
 }
 
-//Stops Growth of the Trees
-var stopInterval = setTimeout(stopGrowth, 30000)
+//Group of functions that deal with the number of branches
+function IncreasePearBranches (){
+  var increasePearBranches = Math.round(Math.random()*3)
+  PearTree.grow.call(PearTree, increasePearBranches)
+  console.log("Pear Branches", PearTree.branches)
 
+}
+
+function IncreaseOakBranches (){
+  var increaseOakBranches = Math.round(Math.random()*3)
+  OakTree.grow.call(OakTree, increaseOakBranches)
+  console.log("Oak Branches", OakTree.branches)
+  console.log("---------------")
+  printToDOM()
+}
+
+//Trim the tree branches
+function trimTrees(){
+  var trimPearTree = Math.round(Math.random()*3+3)
+  var trimOakTree = Math.round(Math.random()*3+3)
+  PearTree.trim.call(PearTree, trimPearTree)
+  OakTree.trim.call(OakTree, trimOakTree)
+  console.log("trim method called")
+}
+
+//Function that stops the growth of the trees
 function stopGrowth (){
   clearInterval(growthInterval)
 }
@@ -73,8 +90,8 @@ function stopGrowth (){
 //DOM interaction
 function printToDOM (){
   $('#treeInfo').append(`
-    <p> Pear tree is now ${PearTree.height}cm tall, and has ... branches </p>
-    <p> Oak tree is now ${OakTree.height}cm tall, and has ... branches</p>`)
+    <p> Pear tree is now ${PearTree.height}cm tall, and has ${PearTree.branches} branches </p>
+    <p> Oak tree is now ${OakTree.height}cm tall, and has ${OakTree.branches} branches</p> <br>`)
 }
 
 
