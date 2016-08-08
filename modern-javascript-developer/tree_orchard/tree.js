@@ -58,15 +58,23 @@ function IncreasePearHeight (){
 function IncreaseOakHeight (){
   var OakTreeIncrease = Math.round(Math.random()*5+5)
   OakTree.increaseHeight.call(OakTree, OakTreeIncrease)
+  printToDOM()
   console.log("oak tree height", OakTree.height)
   console.log("---------------")
 }
-clearInterval(growthInterval)
 
-console.log("current height", PearTree.height)
-// console.log("height now", interval)
+//Stops Growth of the Trees
+var stopInterval = setTimeout(stopGrowth, 30000)
 
-console.log("Plant", Plant)
-console.log("Tree", Tree)
-console.log("PearTree", PearTree)
-console.log("OakTree", OakTree)
+function stopGrowth (){
+  clearInterval(growthInterval)
+}
+
+//DOM interaction
+function printToDOM (){
+  $('#treeInfo').append(`
+    <p> Pear tree is now ${PearTree.height}cm tall, and has ... branches </p>
+    <p> Oak tree is now ${OakTree.height}cm tall, and has ... branches</p>`)
+}
+
+
