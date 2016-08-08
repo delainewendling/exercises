@@ -1,0 +1,22 @@
+{
+  "name": "Tree_orchard",
+  "authors": [
+    "Delaine Wendling <delaine.wendling@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7",
+    "mustache.js": "mustache#^2.2.1"
+  }
+}
