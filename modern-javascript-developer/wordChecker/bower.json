@@ -1,0 +1,26 @@
+{
+  "name": "Word-Checker",
+  "description": "",
+  "main": "src/index.html",
+  "authors": [
+    "Scott Humphries <npm@sscotth.io> (https://sscotth.io/)"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nss-day-cohort-15/boilerplate-sscotth",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "jasmine-core": "jasmine#^2.4.1"
+  }
+}
