@@ -12,7 +12,7 @@ var SeasonalSales = (function(load){
       // console.log("products", products)
       departments = results[1].categories;
       console.log("deparments", departments)
-      SeasonalSales.printItems(products, departments)
+      SeasonalSales.selectedItem(products, departments)
     })
   }
 

@@ -1,7 +1,10 @@
-li.season {
-  display: block;
-  margin: 0 auto;
+.listItem {
+  text-align: center;
   cursor: pointer;
+}
+
+.listItem:hover {
+  color: rgba(255, 104, 104, .4);
 }
 
 .newPrice {
@@ -10,4 +13,12 @@ li.season {
 
 .onSaleNow {
   background-color: rgba(255, 104, 104, .4);
+}
+
+.product {
+  padding: 5%;
+}
+
+.btn-group {
+  margin: 20px;
 }
