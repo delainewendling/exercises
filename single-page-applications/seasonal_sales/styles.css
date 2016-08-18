@@ -3,3 +3,11 @@ li.season {
   margin: 0 auto;
   cursor: pointer;
 }
+
+.newPrice {
+  color: green;
+}
+
+.onSaleNow {
+  background-color: rgba(255, 104, 104, .4);
+}
